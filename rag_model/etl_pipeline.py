@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 task = Task.init(project_name="RAG_ETL_Pipeline", task_name="ROS2_ETL_Pipeline")
 
 # MongoDB Connection
-db_string = "mongodb+srv://and8995:Aniks777@cluster0.4voet.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+db_string = ""
 client = pymongo.MongoClient(db_string)
 db = client["ros2_rag"]
 raw_data_collection = db["raw_data"]
