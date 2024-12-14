@@ -20,10 +20,10 @@ from transformers import AutoTokenizer, AutoModel
 from tqdm import tqdm
 
 # Configuration values
-MONGO_URI = "mongodb+srv://and8995:Aniks777@cluster0.4voet.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-QDRANT_HOST = "https://fc94b6ab-f5e6-4b45-8e7c-51ed48367a37.us-east4-0.gcp.cloud.qdrant.io"
+MONGO_URI = ""
+QDRANT_HOST = ""
 QDRANT_PORT = 6333
-QDRANT_API_KEY = "rzwHZa71bmoNZzJ2YlEvuwWoH8-2WifxSLywPqZc-o8zkaKilb3z1w"
+QDRANT_API_KEY = ""
 QDRANT_COLLECTION_NAME = "star_charts"
 MODEL_NAME = "bert-base-uncased"
 BATCH_SIZE = 500
