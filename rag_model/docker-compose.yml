@@ -14,17 +14,17 @@ services:
       - "8000:8000"
     environment:
       # Replace these with your actual credentials and keys
-      HUGGINGFACE_HUB_TOKEN: "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"
-      CLEARML_API_ACCESS_KEY: "W490RUNUI01X1UYZ728NYMPTZQM8P2"
-      CLEARML_API_SECRET_KEY: "iIcU4ZJGw_1LG5B8DR6grEGIY-9Vu-anLPapMssHITjaDxGEyfrZQq6tfsQ1BcVU0oE"
+      HUGGINGFACE_HUB_TOKEN: ""
+      CLEARML_API_ACCESS_KEY: ""
+      CLEARML_API_SECRET_KEY: ""
       CLEARML_API_SERVER: "http://clearml:8080"
 
       # MongoDB URI for your cloud instance
-      MONGODB_URI: "mongodb+srv://and8995:Aniks777@cluster0.4voet.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+      MONGODB_URI: ""
 
       # Qdrant Cloud Credentials and URL
       QDRANT_HOST: "https://fc94b6ab-f5e6-4b45-8e7c-51ed48367a37.us-east4-0.gcp.cloud.qdrant.io"
       QDRANT_PORT: "6333"
-      QDRANT_API_KEY: "rzwHZa71bmoNZzJ2YlEvuwWoH8-2WifxSLywPqZc-o8zkaKilb3z1w"
+      QDRANT_API_KEY: ""
     volumes:
       - ./:/app
