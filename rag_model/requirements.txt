@@ -1,0 +1,15 @@
+torch
+transformers
+uvicorn
+fastapi
+pymongo
+qdrant-client
+clearml
+huggingface_hub
+requests
+beautifulsoup4
+youtube_transcript_api
+tenacity
+tqdm
+lxml
+sentencepiece
