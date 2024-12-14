@@ -13,10 +13,10 @@ import logging
 app = FastAPI()
 
 # Load model and tokenizer from HuggingFace with authentication token
-HUGGINGFACE_TOKEN = "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"
+HUGGINGFACE_TOKEN = ""
 
-tokenizer = AutoTokenizer.from_pretrained("ArmaanDhande/rag_model_t5_AI", use_auth_token=HUGGINGFACE_TOKEN)
-model = AutoModelForSeq2SeqLM.from_pretrained("ArmaanDhande/rag_model_t5_AI", use_auth_token=HUGGINGFACE_TOKEN)
+tokenizer = AutoTokenizer.from_pretrained("", use_auth_token=HUGGINGFACE_TOKEN)
+model = AutoModelForSeq2SeqLM.from_pretrained("", use_auth_token=HUGGINGFACE_TOKEN)
 
 # Initialize model and tokenizer for embeddings
 EMBEDDING_MODEL_NAME = "bert-base-uncased"
@@ -27,8 +27,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 embedding_model.to(device)
 
 # Qdrant Configuration
-QDRANT_HOST = "https://fc94b6ab-f5e6-4b45-8e7c-51ed48367a37.us-east4-0.gcp.cloud.qdrant.io:6333"
-QDRANT_API_KEY = "rzwHZa71bmoNZzJ2YlEvuwWoH8-2WifxSLywPqZc-o8zkaKilb3z1w"
+QDRANT_HOST = ""
+QDRANT_API_KEY = ""
 qdrant_client = QdrantClient(url=QDRANT_HOST, api_key=QDRANT_API_KEY)
 QDRANT_COLLECTION_NAME = "star_charts" 
 
